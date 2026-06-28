@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: ecommerce-container
-        image: your-dockerhub-username/ecommerce:v1
+        image: rakshithamr10/ecommerce:v1
 
         ports:
         - containerPort: 80
