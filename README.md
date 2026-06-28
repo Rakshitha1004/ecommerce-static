@@ -1,9 +1,20 @@
-To install kubernetes K3s:
-  curl -sfL https://get.k3s.io | sh -
+# Kubernetes (K3s) Deployment
 
+---
 
-Deployment.yaml :
+## Install Kubernetes (K3s)
 
+Run the following command to install K3s on your Linux server:
+
+```bash
+curl -sfL https://get.k3s.io | sh -
+```
+
+---
+
+## deployment.yaml
+
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 
@@ -29,12 +40,13 @@ spec:
 
         ports:
         - containerPort: 80
+```
 
+---
 
+## service.yaml
 
-
-service.yaml :
-
+```yaml
 apiVersion: v1
 kind: Service
 
@@ -51,3 +63,4 @@ spec:
   - port: 80
     targetPort: 80
     nodePort: 30080
+```
