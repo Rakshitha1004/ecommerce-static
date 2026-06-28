@@ -1,0 +1,50 @@
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+header{
+background:#222;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+.hero{
+text-align:center;
+padding:60px;
+background:#0077cc;
+color:white;
+}
+.hero button{
+padding:10px 20px;
+font-size:16px;
+cursor:pointer;
+}
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:40px;
+flex-wrap:wrap;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+}
